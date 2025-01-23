@@ -8,7 +8,7 @@ app.use(express.json());
 const PORT = 8000;
 
 
-const mongourl = "mongodb://localhost:27017/practise";
+const mongourl = "mongodb+srv://tharana2023it:5FhDvCm0fWI8tUfN@backend.qp2kl.mongodb.net/test";
 
 mongoose.connect(mongourl)
 .then(() => {
