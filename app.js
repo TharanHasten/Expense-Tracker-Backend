@@ -1,4 +1,5 @@
 console.log("Node kathuka porom....")
+console.log("Express um sethuka porom....")
 
 const express = require('express');
 const app = express();
@@ -70,5 +71,10 @@ app.delete("/api/expense/:id",async(req,res)=>{
     const {id} = req.params;
     const deleted = await expenseModel.findOneAndDelete({id});
     res.status(200).json(deleted);
+})
+
+app.delete("/api/expense",async(req,res)=>{
+    const deleteAll = await expenseModel.deleteMany();
+    res.status(200).json(deleteAll);
 })
 
