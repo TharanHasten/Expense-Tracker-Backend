@@ -12,7 +12,7 @@ const jwt = require("jsonwebtoken");
 const PORT = 8000;
 
 const mongourl =
-  "your_mongo_url";
+  "your_mongourl";
 
 mongoose
   .connect(mongourl)
