@@ -14,7 +14,7 @@ app.use(cors());
 const PORT = 8000;
 
 const mongourl =
-  "mongodb+srv://tharana2023it:tharan057@backend.qp2kl.mongodb.net/";
+  "mongodb+srv://tharana2023it:tharan057@backend.qp2kl.mongodb.net/Tracker";
 
 mongoose
   .connect(mongourl)
