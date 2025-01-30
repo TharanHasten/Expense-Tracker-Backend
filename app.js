@@ -8,11 +8,13 @@ const mongoose = require("mongoose");
 app.use(express.json());
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
+const cors = require("cors");
+app.use(cors());
 
 const PORT = 8000;
 
 const mongourl =
-  "your_mongourl";
+  "mongodb+srv://tharana2023it:tharan057@backend.qp2kl.mongodb.net/";
 
 mongoose
   .connect(mongourl)
